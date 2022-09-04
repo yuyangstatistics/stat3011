@@ -1,0 +1,377 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1">
+
+  <title>UMN STAT 3011 | Introduction to Statistical Analysis</title>
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+  <!-- Google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GYNMN1X4ST"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-GYNMN1X4ST');
+  </script>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand brand" href="index.html">STAT3011 Home</a>
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://docs.google.com/document/d/1WgAwCMpItdMQ0ezg58gt1fzpqUIUg9iF/edit?usp=sharing&ouid=100194541158022556696&rtpof=true&sd=true">Syllabus</a></li>
+        <li><a href="index.html#coursework">Coursework</a></li>
+        <li><a href="index.html#schedule">Schedule</a></li>
+        <li><a href="office_hours.html">Office Hours</a></li>
+        <li><a href="https://campuswire.com/p/G50FDD740">Campuswire Forum</a></li>  
+        <li><a href="https://canvas.umn.edu/courses/330825">Canvas</a></li>  
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div id="header" style="text-align:center">
+  <h1>STAT 3011 (006): Introduction to Statistical Analysis</h1>
+  <h3>UMN / Fall 2022</h3>
+  <div style="clear:both;"></div>
+</div>
+
+<!-- Intro -->
+<div class="container sec" id="intro">
+  <p>
+    Standard statistical reasoning. Simple statistical methods. Social/physical sciences. 
+    Mathematical reasoning behind facts in daily news. Basic computing environment.
+  </p>
+</div>
+
+<!-- Staff Info -->
+<div class="sechighlight">
+  <div class="container sec" id="people">
+    <!-- <div class="row"> -->
+    <div class="col-md-2">
+      <h3>Instructor</h3>
+      <div class="instructor">
+        <a href="http://umn.edu/home/yang6367">
+        <div class="instructorphoto"><img src="images/Yu_Yang.jpg"></div>
+        <div>Yu Yang</div>
+        </a>
+      </div>
+    </div>
+
+    <div class="col-md-10">
+      <h3>Teaching Assistants</h3>
+      <a href="">
+      <div class="instructor">
+        <div class="instructorphoto"><img src="images/smile.png"></div>
+        <div>Chenghao Lou</div>
+      </div>
+      </a>
+
+      <a href="">
+        <div class="instructor">
+          <div class="instructorphoto"><img src="images/Kaiyuan_Deng.jpg"></div>
+          <div>Kaiyuan Deng</div>
+        </div>
+        </a>
+
+        <a href="">
+          <div class="instructor">
+            <div class="instructorphoto"><img src="images/Korey_Qiang.jpg"></div>
+            <div>Korey Qiang</div>
+          </div>
+          </a>
+
+        <a href="">
+          <div class="instructor">
+            <div class="instructorphoto"><img src="images/smile.png"></div>
+            <div>Xinyi Chen</div>
+          </div>
+          </a>
+
+    </div>
+  </div>
+
+
+<!-- Logistics -->
+  <div class="container sec" id="logistics">
+    <h2>Logistics</h2>
+    <ul>
+      <li><b>Lectures:</b> Mon/Wed/Fri 8:00am-8:50am CDT in John T. Tate Hall 101. 
+      <li><b>Office hours</b>: Hybrid format with remote (over Zoom) or in person options. Information <a href="office_hours.html">here</a>.</li>
+      <li><b>Contact</b>: Students should ask <i>all</i> course-related questions in the <a href="https://campuswire.com/p/G50FDD740">Campuswire Forum</a>. 
+        For external enquiries, emergencies, or personal matters that you don't wish to put in a private post, you can email us at <i>yang6367@umn.edu</i>.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Content -->
+<div class="container sec" id="content">
+  <h2>Content</h2>
+  <h3>What is this course about?</h3>
+  <p>
+    This is an introductory statistics course intended for undergraduate students. Topics include exploratory data analysis 
+    (graphs and simple summary statistics), inference using hypothesis tests and confidence intervals, simple linear regression, 
+    one-way ANOVA, and chi-squared tests for two- way tables. Emphasis will be placed on being able to use these tools with real data. 
+    Students are expected to be comfortable with computers as we will be using R on a regular basis.
+  </p>
+  <blockquote>
+    <small>
+      <i>“All models are wrong, but some are useful.”</i> – George E. P. Box
+    </small>
+  </blockquote>
+
+  <h3>Reference Texts</h3>
+  <p>
+    The following texts are useful, but none are required.
+  </p>
+  <ul>
+      <li>
+          Alan Agresti, Christine Franklin, and Bernhard Klingenberg.
+          <a href="https://www.amazon.com/Statistics-Science-Learning-Books-Carte/dp/0133860825">Statistics: The Art and Science of Learning from Data (4th Edition)</a>
+      </li>
+      <li>
+          Gareth James, Daniela Witten, Trevor Hastie, and Robert Tibshirani. 
+          <a href="https://www.statlearning.com">An Introduction to Statistical Learning with Applications in R</a>
+      </li>
+      <li>
+        George Casella and Roger L. Berger. 
+        <a href="https://www.amazon.com/Statistical-Inference-George-Casella/dp/0534243126">Statistical Inference (2nd Edition)</a>
+      </li>
+      <li>
+        Instructors of STAT 3011.
+        <a href="https://canvas.umn.edu/courses/330825/files/30096811?module_item_id=8785806">STAT 3011 Handout (Fall 2022)</a>
+      </li>
+    </ul>
+</div>
+
+
+<!-- Coursework -->
+<!-- Note the margin-top:-20px and the <br> serve to make the #coursework hyperlink display correctly (with the h2 header visible) -->
+<div class="sechighlight">
+<div class="container sec" id="coursework" style="margin-top:-20px">
+<br>
+<h2>Coursework</h2>
+  <h3>Assignments (20%)</h3>
+  <p>
+    There are nine weekly assignments, which will improve both your theoretical understanding and your practical skills. 
+    All assignments contain both written questions and programming parts. All assignments must be turned into Canvas no later 
+    than 11:59 pm (U.S. Central Time) on due dates. Late submissions will not be accepted. All deadlines are listed in the <a href="#schedule">schedule</a>.
+  </p>
+
+  <h3>Participation (0%)</h3>
+  <p>
+    We appreciate everyone being actively involved in the class! At the same time, participation is not counted in credits.
+  </p>
+
+  <h3>Mid-term Exams (50%)</h3>
+  <p>
+    We will have two mid-term exams. Exam 1 is on October 20, 5:00 pm - 6:30 pm, at Anderson 310. Exam 2 is on November 17, 5:00 pm - 6:30 pm, at Anderson 310.
+  </p>
+
+  <h3>Final Exam (30%)</h3>
+  <p>
+    The final exam is cumulative. It will be on December 20, 5:00 pm - 7:00 pm, location TBD.
+  </p>
+</div>
+</div> 
+
+
+<!-- Schedule -->
+<!-- Note the margin-top:-20px and the <br> serve to make the #schedule hyperlink display correctly (with the h2 header visible) -->
+<div class="container sec" id="schedule" style="margin-top:-20px">
+<br>
+<h2>Schedule</h2>
+<p>
+  Updated lecture <b>slides</b> will be posted here shortly before each lecture.
+</p>
+
+<table class="table">
+  <colgroup>
+    <col style="width:10%">
+    <col style="width:20%">
+    <col style="width:40%">
+    <col style="width:10%">
+    <col style="width:10%">
+  </colgroup>
+  <thead>
+  <tr class="active">
+    <th>Date</th>
+    <th>Description</th>
+    <th>Course Materials</th>
+    <th>Events</th>
+    <th>Deadlines</th>
+  </tr>
+  </thead>
+  <tbody>
+
+    <tr class="warning">
+    <td>Tue Sep 6</td>
+    <td>R and RStudio Installation
+    </td>
+    <td>
+      Suggested Readings:
+      <ol>
+        <li><a href="https://canvas.umn.edu/courses/330825/pages/introduction-to-r">Introduction to R</a></li>
+      </ol>
+    </td>
+    <td></td>
+    <td></td>
+    </tr>
+
+  <tr>
+    <td>Wed Sep 7</td>
+    <td>Overview/Introduction to the Course
+      <br>
+      <!-- [<a href="">slides</a>] -->
+      <br>
+      Introduction to R and RStudio
+      <br>
+      <!-- [<a href="">code</a>] -->
+    </td>
+    <td>
+      Suggested Readings:
+      <ol>
+        <li>Handout Chapter 1</li>
+        <li>Textbook p1-p24</li>
+        <li><a href="readings/R_Reference_Guide.pdf">R Reference Guide</a></li>
+      </ol>
+    </td>
+  </tr>
+<!-- 
+  <tr>
+    <td>Fri Sep 9</td>
+    <td>Word Vectors 2 and Word Window Classification
+      <br>
+      [<a href="slides/cs224n-2022-lecture02-wordvecs2.pdf">slides</a>]
+      [<a href="readings/cs224n-2019-notes02-wordvecs2.pdf">notes</a>]
+    </td>
+    <td>
+      Suggested Readings:
+      <ol>
+        <li><a href="http://nlp.stanford.edu/pubs/glove.pdf">GloVe: Global Vectors for Word Representation</a> (original GloVe paper)</li>
+        <li><a href="http://www.aclweb.org/anthology/Q15-1016">Improving Distributional Similarity with Lessons Learned from Word Embeddings</a></li>
+        <li><a href="http://www.aclweb.org/anthology/D15-1036">Evaluation methods for unsupervised word embeddings</a></li>
+      </ol>
+      Additional Readings:
+      <ol>
+        <li><a href="http://aclweb.org/anthology/Q16-1028">A Latent Variable Model Approach to PMI-based Word Embeddings</a></li>
+        <li><a href="https://transacl.org/ojs/index.php/tacl/article/viewFile/1346/320">Linear Algebraic Structure of Word Senses, with Applications to Polysemy</a></li>
+        <li><a href="https://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf">On the Dimensionality of Word Embedding</a></li>
+      </ol>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td>Mon Sep 12</td>
+    <td>Word Vectors 2 and Word Window Classification
+      <br>
+      [<a href="slides/cs224n-2022-lecture02-wordvecs2.pdf">slides</a>]
+      [<a href="readings/cs224n-2019-notes02-wordvecs2.pdf">notes</a>]
+    </td>
+    <td>
+      Suggested Readings:
+      <ol>
+        <li><a href="http://nlp.stanford.edu/pubs/glove.pdf">GloVe: Global Vectors for Word Representation</a> (original GloVe paper)</li>
+        <li><a href="http://www.aclweb.org/anthology/Q15-1016">Improving Distributional Similarity with Lessons Learned from Word Embeddings</a></li>
+        <li><a href="http://www.aclweb.org/anthology/D15-1036">Evaluation methods for unsupervised word embeddings</a></li>
+      </ol>
+      Additional Readings:
+      <ol>
+        <li><a href="http://aclweb.org/anthology/Q16-1028">A Latent Variable Model Approach to PMI-based Word Embeddings</a></li>
+        <li><a href="https://transacl.org/ojs/index.php/tacl/article/viewFile/1346/320">Linear Algebraic Structure of Word Senses, with Applications to Polysemy</a></li>
+        <li><a href="https://papers.nips.cc/paper/7368-on-the-dimensionality-of-word-embedding.pdf">On the Dimensionality of Word Embedding</a></li>
+      </ol>
+    </td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr class="warning">
+    <td>Tue Sep 13</td>
+    <td>Introduction to R and RStudio
+        <br>
+        [<a href="readings/cs224n-python-review.pdf">slides</a>]
+        [<a href="readings/python_tutorial.ipynb">notebook</a>]
+    </td>
+    <td>
+        <i class="fa fa-clock-o"></i> 1:30pm - 2:30pm<br>Remote (link on Canvas)
+    </td>
+    <td></td>
+    <td></td>
+    </tr>
+
+  <tr>
+    <td>Wed Sep 14</td>
+    <td>Backprop and Neural Networks
+      <br>
+      [<a href="slides/cs224n-2022-lecture03-neuralnets.pdf">slides</a>]
+      [<a href="readings/cs224n-2019-notes03-neuralnets.pdf">notes</a>]
+    </td>
+    <td>
+      Suggested Readings:
+      <ol>
+        <li><a href="readings/gradient-notes.pdf">matrix calculus notes</a></li>
+        <li><a href="readings/review-differential-calculus.pdf">Review of differential calculus</a></li>
+        <li><a href="http://cs231n.github.io/neural-networks-1/">CS231n notes on network architectures</a></li>
+        <li><a href="http://cs231n.github.io/optimization-2/">CS231n notes on backprop</a></li>
+        <li><a href="http://cs231n.stanford.edu/handouts/derivatives.pdf">Derivatives, Backpropagation, and Vectorization</a></li>
+        <li><a href="http://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf">Learning Representations by Backpropagating Errors</a> (seminal Rumelhart et al. backpropagation paper)</li>
+      </ol>
+      Additional Readings:
+      <ol>
+        <li><a href="https://medium.com/@karpathy/yes-you-should-understand-backprop-e2f06eab496b">Yes you should understand backprop</a></li>
+        <li><a href="http://www.jmlr.org/papers/volume12/collobert11a/collobert11a.pdf">Natural Language Processing (Almost) from Scratch</a></li>
+      </ol>
+    </td>
+    <td>
+      Assignment 2 <b><font color="green">out</font></b>
+      <br>
+      [<a href="assignments/a2.zip">code</a>]<br>
+      [<a href="assignments/a2.pdf">handout</a>]<br>
+      [<a href="assignments/a2_latex_template.zip">latex template</a>]
+    </td>
+    <td>Assignment 1 <b><font color="red">due</font></b></td>
+  </tr>
+ -->
+
+  </tbody>
+</table>
+</div> 
+
+<!-- jQuery and Bootstrap -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
