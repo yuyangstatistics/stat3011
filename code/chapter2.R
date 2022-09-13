@@ -4,7 +4,9 @@
 survey <- read.csv("data/Getting_to_Know_You_Survey_Fall_2022.csv")
 colnames(survey)
 freq <- table(survey$Which.season.do.you.enjoy.the.most..)
+freq
 proportion <- freq / length(survey$Which.season.do.you.enjoy.the.most..)
+proportion
 
 #### Measure of Center
 x1 <- c(6, 5, 9, 5, 1001)
@@ -55,7 +57,7 @@ summary(salary$Salary[salary$Conference == "W"])
 
 
 
-##### =========== Grpahical Summaries ================#####
+##### =========== Graphical Summaries ================#####
 
 #### Pie Chart and Bar Graph
 socialmedia <- c("Facebook", "Instagram", "Twitter", "YouTube", "others")
@@ -74,9 +76,11 @@ stem(salary$Salary, scale = 0.5)
 #### Histogram
 salary <- read.table("http://users.stat.umn.edu/~wuxxx725/data/NBAsalary.txt", 
                      sep = "\t",header = TRUE)
+par(mfrow=c(1,3))
 hist(salary$Salary, xlab="Team Salaries", main="NBA Salary", breaks=2)
 hist(salary$Salary, xlab="Team Salaries", main="NBA Salary", breaks=10)
 hist(salary$Salary, xlab="Team Salaries", main="NBA Salary", breaks=20)
+par(mfrow=c(1,1))
 
 gpa <- c(1.1, 2.3, 2.9, 3.2, 3.3, 3.5, 3.5, 3.6, 3.6, 3.6, 3.6, 3.8, 3.8, 
          3.9, 4) 
@@ -98,9 +102,9 @@ text(x = median(gpa), y = 7, "median", col = "blue")
 hist(salary, xlab="Salary (in $1000’s)", main="Histogram for Salary", 
      breaks=7)
 abline(v = mean(salary), col = "blue")
-text(x = mean(salary), y = 5, "mean", col = "blue")
+text(x = mean(salary), y = 4, "mean", col = "blue")
 abline(v = median(salary), col = "blue", lty = "dashed")
-text(x = median(salary), y = 4, "median", col = "blue")
+text(x = median(salary), y = 5, "median", col = "blue")
 
 
 #### Boxplot
