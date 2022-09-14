@@ -115,3 +115,6 @@ boxplot(Haircut ~ Gender, xlab="Gender", ylab="Cost", data = dat,
         main="Side-by-Side Boxplots")
 boxplot(dat$Haircut ~ dat$Gender, xlab="Gender", ylab="Cost",
         main="Side-by-Side Boxplots")
+boxplot(Haircut ~ Gender, xlab="Gender", ylab="Cost", data = dat, 
+        main="Side-by-Side Boxplots", range = 10)
+summary(dat$Haircut[dat$Gender == "M"])
