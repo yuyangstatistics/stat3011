@@ -3,9 +3,9 @@
 #### Frequency Table
 survey <- read.csv("data/Getting_to_Know_You_Survey_Fall_2022.csv")
 colnames(survey)
-freq <- table(survey$Which.season.do.you.enjoy.the.most..)
+freq <- table(survey$FavSeason)
 freq
-proportion <- freq / length(survey$Which.season.do.you.enjoy.the.most..)
+proportion <- freq / length(survey$FavSeason)
 proportion
 
 #### Measure of Center
@@ -68,6 +68,7 @@ barplot(counts, names=socialmedia, main="Social Media Bar graph")
 #### Stem-and-Leaf Plot
 stem(x = c(10, 20, 23, 27, 27, 27, 40, 49, 55, 56))
 stem(x = c(40133, 40598, 41532, 41808, 41875, 42200))
+stem(x = c(40133, 40598, 41532, 41808, 41875, 42200), scale = 0.5)
 
 salary <- read.table("http://users.stat.umn.edu/~wuxxx725/data/NBAsalary.txt", 
                      sep = "\t",header = TRUE)
