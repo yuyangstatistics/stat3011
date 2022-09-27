@@ -57,3 +57,22 @@ pnorm(25, mean=21, sd=2) - pnorm(17, mean=21, sd=2)
 
 ## 2.2 calculate quantile
 qnorm(.60, mean=21, sd=2)
+
+
+##### Density Curve Approximation #####
+x <- seq(-9, 9, length.out = 100)
+y <- dnorm(x, mean = 0, sd = 3)
+plot(x, y, type = "l")
+
+sample_1 <- rnorm(n = 10, mean = 0, sd = 3)
+hist(sample_1, prob = TRUE)
+lines(x, y, type = "l")
+
+sample_2 <- rnorm(n = 100, mean = 0, sd = 3)
+hist(sample_2, prob = TRUE)
+lines(x, y, type = "l")
+
+sample_3 <- rnorm(n = 1000, mean = 0, sd = 3)
+hist(sample_3, prob = TRUE)
+lines(x, y, type = "l")
+
