@@ -20,11 +20,11 @@ sample_1 <- sample(population, size = 389)
 ptrue_in_ci(ci_1, ptrue)
 
 sample_2 <- sample(population, size = 389)
-(ci_2 <- get_ci(sample_1))
+(ci_2 <- get_ci(sample_2))
 ptrue_in_ci(ci_2, ptrue)
 
 sample_3 <- sample(population, size = 389)
-(ci_3 <- get_ci(sample_1))
+(ci_3 <- get_ci(sample_3))
 ptrue_in_ci(ci_3, ptrue)
 
 # when the confidence level is 0.95
