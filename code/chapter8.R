@@ -1,3 +1,45 @@
+##### A Demo of Confidence Level Interpretation #####
+# a function to get the confidence interval for population proportion
+get_ci <- function(sample, conf_level = 0.95) {
+  phat <- mean(sample)
+  ci <- phat + c(-1, 1) * qnorm(0.5 + conf_level / 2) * sqrt(phat * (1 - phat) / length(sample))
+  ci
+}
+
+# a function to check whether ptrue lies inside ci
+ptrue_in_ci <- function(ci, ptrue) {
+  ci[1] <= ptrue & ptrue <= ci[2]
+}
+
+### demo
+ptrue <- 0.143
+population <- rbinom(n = 10000, size = 1, prob = ptrue)
+
+sample_1 <- sample(population, size = 389)
+(ci_1 <- get_ci(sample_1))
+ptrue_in_ci(ci_1, ptrue)
+
+sample_2 <- sample(population, size = 389)
+(ci_2 <- get_ci(sample_1))
+ptrue_in_ci(ci_2, ptrue)
+
+sample_3 <- sample(population, size = 389)
+(ci_3 <- get_ci(sample_1))
+ptrue_in_ci(ci_3, ptrue)
+
+# when the confidence level is 0.95
+nsamples <- 1000
+sample_results <- replicate(nsamples, ptrue_in_ci(get_ci(sample(population, size = 389), conf_level = 0.95), ptrue))
+sample_results
+mean(sample_results)
+
+# when the confidence level is 0.8
+nsamples <- 1000
+sample_results <- replicate(nsamples, ptrue_in_ci(get_ci(sample(population, size = 389), conf_level = 0.8), ptrue))
+sample_results
+mean(sample_results)
+
+
 ##### Finding z_{alpha/2} #####
 # 1. confidence level = 0.9, alpha = 0.1
 qnorm(1 - 0.1 / 2)
