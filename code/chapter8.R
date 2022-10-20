@@ -77,12 +77,12 @@ lines(x = x, y = dt(x, df = 40), type = "l", col = "red") # t_40
 
 ### 2. calculate probabilities and percentiles
 qt(1 - 0.005, df = 11)
-qt(0.005, df = 11, lower = FALSE)
+qt(0.005, df = 11, lower.tail = FALSE)
 
 qt(0.99, df = 21)
 
 1 - pt(2, df = 14)
-pt(2, df = 14, lower = FALSE)
+pt(2, df = 14, lower.tail = FALSE)
 
 
 ##### Example 8.8 #####
@@ -90,6 +90,8 @@ cigs <- c(1,3,3,8,9,9,9,10,11,11,12,13,14,14,15,15,15,16,
           16,16,16,17,17,17,17,18,19,19,20,20,20,20,20,22,22,
           23,23,24,25,25,25,28,30,30,30,30,32,32,35,38,40)
 stem(cigs)
+qqnorm(cigs)
+qqline(cigs)
 
 mean(cigs)
 sd(cigs)
